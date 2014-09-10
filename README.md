@@ -1,4 +1,4 @@
-"Temp Liter" 
+SALLFY-JST
 ==========
 
 JavaScript lite templater
