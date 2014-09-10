@@ -1,4 +1,4 @@
-SALLFY-JST
+SALLFY JST
 ==========
 
 JavaScript lite templater
