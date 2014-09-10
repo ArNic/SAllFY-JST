@@ -28,7 +28,7 @@ _I recommend using a separate file for more order_
 3. Make template files
 - js/tpl/first.tpl
 ``` javascript
-<div>%_text_%</div>
+<div>%%_text_%%</div>
 ```
 
 4. Write where you want to add tag attribute "jtpl"
