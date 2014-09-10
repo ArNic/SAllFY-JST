@@ -39,5 +39,3 @@ _I recommend using a separate file for more order_
 ``` javascript
 tpl.methods.change('body','one');
 ```
-
-
