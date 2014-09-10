@@ -35,7 +35,7 @@ _I recommend using a separate file for more order_
 <div jtpl="body"></body>
 ```
 
-- To connect the call the template
+- To run the call the template
 ``` javascript
 tpl.methods.change('body','one');
 ```
