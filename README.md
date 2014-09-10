@@ -25,8 +25,7 @@ tpl.templates={
 ```
 _I recommend using a separate file for more order_
 
-- Make template files
-\- js/tpl/first.tpl
+- Make template files - js/tpl/first.tpl
 ``` javascript
 <div>%%_text_%%</div>
 ```
@@ -38,7 +37,7 @@ _I recommend using a separate file for more order_
 
 - To connect the call the template
 ``` javascript
-tpl.methods.change('body','logged');
+tpl.methods.change('body','one');
 ```
 
 
