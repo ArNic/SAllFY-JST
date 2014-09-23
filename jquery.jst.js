@@ -168,10 +168,12 @@ tpl={
                     $('[jtpl="'+id+'"]').html(tpl.methods.renderer(name,data));
                 }
             }else{
-                if(id){
+                if(id&&data){
                     $('[jtpl="'+id+'"]').html(data);
-                }else{
+                }else if(!id){
                     console.log('Undefined change name');
+                }else if(!data){
+                    console.log('Space data in id');
                 }
             }
         },
