@@ -1,5 +1,8 @@
 /**
- * Заказ
+ * SAllFY JST
+ * JavaScript lite templater
+ * @author: ArNic https://github.com/ArNic
+ * @link: https://github.com/ArNic/SAllFY-JST
  * @type {{dir: string, templates: {}, cache: {}, defaults: {template: {cachable: boolean}}, methods: {merge: merge, renderer: renderer, append: append, prepend: prepend, change: change, clear: clear}}}
  */
 tpl={
@@ -93,9 +96,10 @@ tpl={
                     }
                     if(old_ln==0||old_ln>0&&Object.keys(data).length>0){
                         $.each(data,function(k,v){
-                            content=content.replace(new RegExp('\%\%_'+k+'_\%\%','g'),v);
+                            if(v!==undefined) content=content.replace(new RegExp('\%\%_'+k+'_\%\%','g'),v);
                         });
                         content=content.replace(new RegExp('\%\%_.*?_\%\%','g'),'');
+
                     }else{
                         content='';
                     }
@@ -164,7 +168,11 @@ tpl={
                     $('[jtpl="'+id+'"]').html(tpl.methods.renderer(name,data));
                 }
             }else{
-                console.log('Undefined change name');
+                if(id){
+                    $('[jtpl="'+id+'"]').html(data);
+                }else{
+                    console.log('Undefined change name');
+                }
             }
         },
         /**
